@@ -6,14 +6,14 @@ const routes = [
         component: () => import('@/components/HomePage.vue')
     },
     {
-        path: '/en',
+        path: '/#en',
         name: "HomeEn",
         component: () => import('@/components/HomePage.vue'),
     },
     {
         path: "/:catchAll(.*)",
         name: "Other",
-        redirect: '/'
+        redirect: '/#'
     },
 ]
 const router = createRouter({

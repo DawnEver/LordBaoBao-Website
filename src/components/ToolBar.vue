@@ -36,7 +36,7 @@ function toggleLanguage() {
     locale.value = nextLanguage;
     if (nextLanguage === "en") {
         document.title = "Mingyang Bao | @Lord BaoBao";
-        router.push('/en');
+        router.push('/#en');
     } else {
         document.title = "包铭阳 | @Lord包包";
         router.push('/');
@@ -57,7 +57,7 @@ const route = useRoute();
 watch(
     () => route.path,
     (newPath) => {
-        if (newPath.startsWith('/en')) {
+        if (newPath.startsWith('/#en')) {
             locale.value = 'en';
             document.title = "Mingyang Bao | @Lord BaoBao";
         } else {
