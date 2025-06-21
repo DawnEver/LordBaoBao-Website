@@ -1,5 +1,5 @@
 <template>
-  <HomePage/>
+  <HomePage />
 </template>
 
 <script setup lang="ts">

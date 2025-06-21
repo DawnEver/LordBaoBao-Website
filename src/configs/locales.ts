@@ -18,7 +18,7 @@ let locale = "zhHans";
 export default {
   // current locale
   locale,
-  
+
 
   // when translation is not available fallback to that locale
   fallbackLocale: "en",

@@ -1,24 +1,24 @@
-<template >
+<template>
     <v-container class="d-flex justify-center">
-        <v-card tonal class="mx-auto pa-8" >
+        <v-card elevated class="mx-auto pa-8" width="80%" style="opacity: 0.9;">
             <v-card-text>
-                <p v-html="markdown.render(readmeTxt)"></p>
+            <p v-html="markdown.render(readmeTxt)"></p>
             </v-card-text>
         </v-card>
-
     </v-container>
-
 </template>
 
+
 <script setup lang="ts">
+
 import markdownIt from 'markdown-it';
 
 const markdown = new markdownIt({
-  html: true, 
-  xhtmlOut: true, 
-  breaks: true, 
-  linkify: true, 
-  typographer: true 
+    html: true,
+    xhtmlOut: true,
+    breaks: true,
+    linkify: true,
+    typographer: true
 })
 
 import { ref, onMounted } from 'vue';
@@ -38,7 +38,7 @@ const readmeUrl = computed(() => {
 const fetchReadme = async () => {
     const res = await fetch(readmeUrl.value);
     if (!res.ok) {
-        if (locale.value === 'zhHans'){
+        if (locale.value === 'zhHans') {
             readmeTxt.value = '无法获取 README，请检查网络连接或稍后再试。';
         }
         else {
@@ -46,7 +46,7 @@ const fetchReadme = async () => {
         }
         return;
     }
-    else if (locale.value === 'zhHans'){
+    else if (locale.value === 'zhHans') {
         const text = await res.text();
         readmeTxt.value = text.split('\n').slice(2).join('\n');
         return;
