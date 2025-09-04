@@ -4,7 +4,7 @@
     <p class="text-center">
       {{ $t("copyrights") }}
       <br />
-      <a href="mailto:mingyangbob@gmail.com" rel="noreferrer" target="_blank">hi.motor.cn@gmail.com</a>
+      <a href="mailto:mingyangbob@gmail.com" rel="noreferrer" target="_blank">mingyangbob@gmail.com</a>
     </p>
   </v-card>
   </v-container>

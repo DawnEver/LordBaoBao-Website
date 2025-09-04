@@ -5,6 +5,7 @@
   <div class="front">
     <ToolBar />
     <Card />
+    <Friends />
     <Footer />
   </div>
 </template>
@@ -13,7 +14,7 @@
 
 .background,.front {
   width: 100%;
-  height: 115%;
+  height: 160%;
   position: absolute;
 }
 
@@ -39,6 +40,7 @@
 <script setup lang="ts">
 import ToolBar from '@/components/ToolBar.vue';
 import Card from '@/components/Card.vue';
+import Friends from './Friends.vue';
 import Footer from '@/components/Footer.vue';
 import { ref, onMounted } from 'vue';
 
