@@ -23,11 +23,12 @@ const markdown = new markdownIt({
 
 import { ref, onMounted } from 'vue';
 
-const readmeTxt = ref('');
 import { watch, computed } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const { locale } = useI18n();
+
+const readmeTxt = ref(locale.value === 'en' ? 'Loading README from https://github.com/DawnEver' : '正在从 https://github.com/DawnEver 加载 README...');
 
 const readmeUrl = computed(() => {
     return locale.value === 'en'
