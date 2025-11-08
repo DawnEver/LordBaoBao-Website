@@ -6,6 +6,7 @@
 
 // Plugins
 import { registerPlugins } from '@/plugins'
+import router from '@/plugins/router'
 
 // Components
 import App from './App.vue'
@@ -18,4 +19,7 @@ const app = createApp(App)
 
 registerPlugins(app)
 
-app.mount('#app')
+// Ensure router initial navigation (and locale guard) completes before mount
+router.isReady().then(() => {
+	app.mount('#app')
+})
