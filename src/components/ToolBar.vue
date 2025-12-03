@@ -2,7 +2,7 @@
     <v-card class="mx-auto">
         <v-toolbar color="primary">
             <v-toolbar-title>
-                <img src="https://oss.hi-motor.site/web/logo/hi-motor_white.svg" alt="logo" width="60" />
+                <img src="https://cdn.mingyangbao.site/logo-latest/MB-white.svg" alt="logo" width="60" />
             </v-toolbar-title>
             <v-spacer />
 
