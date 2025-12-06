@@ -45,14 +45,14 @@ const friends = computed(() => {
       {
         name: '卢舒愉',
         figPath: 'https://lushuyu.site/resource/icon.jpg',
-        content: 'NUS 计算机大佬 卢仙',
+        content: 'NUS 计算机博士生,卢仙',
         link: 'https://lushuyu.site',
       },
       {
         name: 'Henry',
-        figPath: 'http://47.100.188.11/img/my_icon.jpg',
-        content: '',
-        link: 'http://47.100.188.11',
+        figPath: 'https://evanescence0515.github.io/img/my_icon.jpg',
+        content: 'NJU 医学博士生',
+        link: 'https://evanescence0515.github.io/',
       },
       
     ]
@@ -61,14 +61,14 @@ const friends = computed(() => {
       {
         name: 'Lu Shuyu',
         figPath: 'https://lushuyu.site/resource/icon.jpg',
-        content: 'NUS CS PhD Lu Xian',
+        content: 'NUS CS PhD Student',
         link: 'https://lushuyu.site',
         },
         {
         name: 'Henry',
-        figPath: 'http://47.100.188.11/img/my_icon.jpg',
-        content: '',
-        link: 'http://47.100.188.11',
+        figPath: 'https://evanescence0515.github.io/img/my_icon.jpg',
+        content: 'NJU Medicine PhD Student',
+        link: 'https://evanescence0515.github.io/',
       },
 
     ]
